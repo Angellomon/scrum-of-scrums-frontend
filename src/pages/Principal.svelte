@@ -3,6 +3,7 @@
   import { push } from 'svelte-spa-router';
   import Titulo from '../lib/components/Titulo.svelte';
   import { onDestroy } from 'svelte';
+  import Cubo from '../lib/components/cubo/Cubo.svelte';
 
   let on = false;
   let redirect = false;
@@ -30,6 +31,9 @@
 <section class:on>
   {#if !redirect}
     <div class="container" transition:fade>
+      <!-- <Pieza skewX={30} skewY={0} rotation={-30} scaleY={0.87} />
+      <Pieza skewX={30} skewY={0} rotation={30} />
+      <Pieza skewX={-30} skewY={0} rotation={-30} /> -->
       <Titulo />
       {#if on}
         <div class="mensaje">
@@ -37,6 +41,7 @@
           <p transition:fade>of the Future</p>
         </div>
       {/if}
+      <Cubo />
     </div>
   {/if}
 </section>
