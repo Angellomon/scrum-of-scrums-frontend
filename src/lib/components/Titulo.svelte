@@ -7,7 +7,8 @@
 <style>
   h2 {
     color: white;
-    font-size: 3em;
+    font-size: 5em;
     text-align: right;
+    line-height: 1em;
   }
 </style>
