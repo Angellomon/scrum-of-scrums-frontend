@@ -9,25 +9,30 @@
   export let left = 0;
   export let right = 0;
   export let top = 0;
+
+  export let glow = false;
+  export let on = false;
+
+  export let colorPrincpal = 'bfea45';
 </script>
 
 <div
   style={`margin-top: ${top}px; margin-left: ${left}px; margin-right: ${right}px; transform: rotate(${rotation}deg) skewX(${skewX}deg) skewY(${skewY}deg) scaleY(${scaleY})`}
 >
   <div class="row">
-    <Pieza />
-    <Pieza />
-    <Pieza />
+    <Pieza {glow} {colorPrincpal} {on} />
+    <Pieza {glow} {colorPrincpal} {on} />
+    <Pieza {glow} {colorPrincpal} {on} />
   </div>
   <div class="row">
-    <Pieza />
-    <Pieza />
-    <Pieza />
+    <Pieza {glow} {colorPrincpal} {on} />
+    <Pieza {glow} {colorPrincpal} {on} />
+    <Pieza {glow} {colorPrincpal} {on} />
   </div>
   <div class="row">
-    <Pieza />
-    <Pieza />
-    <Pieza />
+    <Pieza {glow} {colorPrincpal} {on} />
+    <Pieza {glow} {colorPrincpal} {on} />
+    <Pieza {glow} {colorPrincpal} {on} />
   </div>
 </div>
 
@@ -35,6 +40,7 @@
   div.row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-left: 30px;
   }
 </style>
