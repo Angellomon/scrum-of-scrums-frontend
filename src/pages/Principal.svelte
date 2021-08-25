@@ -10,6 +10,8 @@
   let timeout;
   let timeout2;
 
+  const URL = 'https://collaboration.merck.com/sites/SoFMexico/SitePages/sos.aspx';
+
   $: if (on) {
     timeout = setTimeout(() => {
       redirect = true;
@@ -20,9 +22,8 @@
   $: if (redirect) {
     clearTimeout(timeout);
     timeout2 = setTimeout(() => {
-      // window.location.href =
-      //   'https://collaboration.merck.com/sites/SoFMexico/SitePages/ignitionCenter.aspx';
-      push('/info');
+      window.location.href = URL;
+      // push('/info');
     }, 400);
   }
   onDestroy(() => clearTimeout(timeout2));
@@ -31,17 +32,20 @@
 <section class:on>
   {#if !redirect}
     <div class="container" transition:fade>
-      <!-- <Pieza skewX={30} skewY={0} rotation={-30} scaleY={0.87} />
-      <Pieza skewX={30} skewY={0} rotation={30} />
-      <Pieza skewX={-30} skewY={0} rotation={-30} /> -->
-      <Titulo />
+      <Titulo {on} />
+      <Cubo
+        on:click={() => {
+          on = true;
+        }}
+      />
       {#if on}
-        <div class="mensaje">
-          <p transition:fade>Powered by Subsidiary</p>
-          <p transition:fade>of the Future</p>
+        <div class="mensaje" transition:fade>
+          <p>Powered by Subsidiary</p>
+          <p>of the Future</p>
         </div>
+      {:else}
+        <span class="helper">dale clic</span>
       {/if}
-      <Cubo />
     </div>
   {/if}
 </section>
@@ -76,5 +80,10 @@
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
+  }
+  .helper {
+    color: white;
+    text-align: center;
+    margin-top: 15%;
   }
 </style>
