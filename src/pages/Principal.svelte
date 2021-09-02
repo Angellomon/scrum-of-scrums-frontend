@@ -72,17 +72,17 @@
   }
 
   span.cubo-container {
-    bottom: 50%;
+    bottom: 45%;
   }
 
   span.helper {
     color: white;
     text-align: center;
-    bottom: 40%;
+    bottom: 35%;
   }
 
   div.mensaje {
-    margin-top: 5em;
+    bottom: 10%;
   }
   section {
     display: flex;
