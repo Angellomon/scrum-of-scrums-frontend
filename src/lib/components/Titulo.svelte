@@ -9,9 +9,9 @@
 <style>
   h2 {
     color: white;
-    font-size: 3em;
+    font-size: 2.9em;
     text-align: right;
-    line-height: 1em;
+    line-height: 2.6rem;
     /* margin-top: -100px; */
   }
   .on {
