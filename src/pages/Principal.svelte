@@ -61,7 +61,7 @@
   }
 
   p {
-    color: #75c7ae;
+    color: #13213d;
     text-align: center;
     margin: 0;
     font-weight: bold;
