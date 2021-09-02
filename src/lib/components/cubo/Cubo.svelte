@@ -78,7 +78,7 @@
 
   span.glow-container {
     margin-left: 60px;
-    margin-top: 120px;
+    margin-top: 60px;
     z-index: 0;
     position: absolute;
 
