@@ -10,7 +10,7 @@
 <style>
   @font-face {
     font-family: Invention;
-    src: url('/fonts/Invention_W_Rg.woff2');
+    src: url('/fonts/Invention_W_Lt.woff2');
   }
 
   :root {

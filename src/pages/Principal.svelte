@@ -63,7 +63,6 @@
     color: #75c7ae;
     text-align: center;
     margin: 0;
-    font-weight: bold;
   }
 
   span.titulo {

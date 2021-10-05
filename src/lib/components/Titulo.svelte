@@ -9,7 +9,7 @@
 <style>
   h2 {
     color: white;
-    font-size: 2.9em;
+    font-size: 2.7rem;
     text-align: left;
     line-height: 2.6rem;
     text-align: right;
